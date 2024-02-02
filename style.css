@@ -1,0 +1,198 @@
+  /*  navbar style */
+  nav {
+    background-color: #f3eaea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color:black; 
+    font-family: sans-serif; 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 15px; 
+}
+
+a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    transition: color 0.2s ease-in-out; 
+}
+
+a:hover {
+    color: gray; 
+}
+
+/* banner style*/
+
+.banner {
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    background-color: black; 
+    padding: 30px 0; 
+    text-align: center; 
+    overflow: hidden;
+}
+.text-color{
+    color: red;
+}
+
+.banner-image {
+    width: 50%; 
+    max-width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+
+.banner-text {
+    display: inline-block;
+    justify-items: center;
+    width: 50%; 
+    vertical-align: top; 
+    color: white;
+    margin: 0;
+}
+
+.banner-text h1 {
+    
+    font-size: 60px; 
+    margin-bottom: 10px; 
+}
+
+.banner-text p {
+    
+    font-size: 50px; 
+}
+
+/*project style */
+
+.section-title{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    background-color: lightgray;
+}
+
+.Upcoming-projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+  
+  .project-card {
+    width: 300px; 
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .project-card h2 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  
+  .project-card p {
+    margin-top: 10px;
+    line-height: 1.4;
+    color: #333;
+  }  
+  
+  
+/* contact style*/
+
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color:#f3eaea;
+    margin-top: 5px;
+    font-size: large;
+  }
+  
+  .contact h1 {
+    font-size: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .contact input,.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .contact textarea {
+    resize: vertical; 
+  }
+  
+  .contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    
+  }
+  
+  .contact button:hover {
+    background-color: #9af49f;
+  }
+
+
+  
+  /* footer style */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+/* Media query for mobile device */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+    }
+
+    .banner {
+        flex-direction: column; 
+        padding: 20px;
+        margin: 0; 
+    }
+
+    .banner-text {
+        width: 100%; 
+    }
+    .banner-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto; 
+    }
+
+    .project-card {
+        width: calc(100% - 40px); 
+      }
+}
